@@ -97,7 +97,7 @@ export default {
 	"Custom-Trophy"					: false,
 	"Custom-Ticker"					: false,
   	"Custom-Cursor"					: false,
-	"Runes-BG"						: true,
+	"Runes-BG"						: false,
 	"custom-champs-image"			: false,
 	"hide-theme-usage-time"			: false,
 	"hide-tft-match-history"		: false,
