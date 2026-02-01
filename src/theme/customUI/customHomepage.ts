@@ -517,7 +517,13 @@ class MainController {
     
         // Append controls to the container
         progressBar.append(progress);
-        container.append(musicControlsMain, progressBar);
+
+        // Only add music controls if audio is not disabled
+        if (!ElainaData.get("Disable-Theme-Audio")) {
+            container.append(musicControlsMain, progressBar);
+        } else {
+            container.style.display = "none";
+        }
     
         // Append container and wallpaper controls separately to maintain original positions
         const showContainer = document.querySelector(".rcp-fe-lol-home");
