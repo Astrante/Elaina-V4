@@ -200,9 +200,9 @@ export default defineConfig((config) => ({
                     }
                 };
             
-                await copyTask('src/src/assets', join(outDir, 'assets'), 'Copying assets folder to /dist');
-                await copyTask('src/src/config', join(outDir, 'config'), 'Copying config folder to /dist');
-                await copyTask('src/src/locales', join(outDir, 'locales'), 'Copying locales folder to /dist');
+                await copyTask('src/assets', join(outDir, 'assets'), 'Copying assets folder to /dist');
+                await copyTask('src/config', join(outDir, 'config'), 'Copying config folder to /dist');
+                await copyTask('src/locales', join(outDir, 'locales'), 'Copying locales folder to /dist');
             
                 try {
                     await copyTask('src/elaina-theme-data', join(outDir, 'elaina-theme-data'), 'Copying CDN folder to /dist');

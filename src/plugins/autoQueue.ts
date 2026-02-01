@@ -1,5 +1,5 @@
-import * as observe from "../../elaina-theme-data/src/utils/observer.js"
-import { log } from "../../elaina-theme-data/src/utils/themeLog.js";
+import * as observe from "../elaina-theme-data/src/utils/observer.js"
+import { log } from "../elaina-theme-data/src/utils/themeLog.js";
 
 let autoQueue = false
 

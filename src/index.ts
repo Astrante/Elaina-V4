@@ -6,26 +6,26 @@
  * @Nyan Meow~~~
  */
 // Import theme DataStore to use it instead pengu DataStore
-import "./src/utils/themeDataStore.ts";
+import "./utils/themeDataStore.ts";
 
 // Importing theme contents
-import "./src/languages.ts"
-import "./src/utils/setTime.ts"
-import { log } from './src/utils/themeLog.ts';
+import "./languages.ts"
+import "./utils/setTime.ts"
+import { log } from './utils/themeLog.ts';
 
 log('By %cElaina Da Catto', 'color: #e4c2b3');
 log('%cMeow ~~~', 'color: #e4c2b3');
 log('Importing theme contents');
 
 // Import server-side backup/restore data service
-import './src/services/backupAndRestoreDatastore';
+import './services/backupAndRestoreDatastore';
 
 // Import Init modules
-import { Settings } from "./src/plugins/settings.ts";
-import { transparentLobby } from "./src/theme/customUI/transparentLobby.ts";
-import { AutoQueue } from "./src/plugins/autoQueue.ts";
-import { skipHonor } from "./src/plugins/skipHonor.js";
-import /**{ Cdninit } from **/'./src/theme/Cdn.ts';
+import { Settings } from "./plugins/settings.ts";
+import { transparentLobby } from "./theme/customUI/transparentLobby.ts";
+import { AutoQueue } from "./plugins/autoQueue.ts";
+import { skipHonor } from "./plugins/skipHonor.js";
+import /**{ Cdninit } from **/'./theme/Cdn.ts';
 
 // Export Init
 export function init(context: any) {
@@ -40,28 +40,28 @@ export function init(context: any) {
 }
 
 // Import modules
-import { CheckUpdate } from "./src/updates/checkUpdate.ts"
-import { ApplyUI } from "./src/theme/loadCustomUi.ts";
-import { Filters } from "./src/theme/loadCustomFilters.ts"
-import { LoadCss } from "./src/theme/loadCustomCss.ts"
-import { ThemePresetSettings } from "./src/plugins/themePresetSettingsTab.ts"
+import { CheckUpdate } from "./updates/checkUpdate.ts"
+import { ApplyUI } from "./theme/loadCustomUi.ts";
+import { Filters } from "./theme/loadCustomFilters.ts"
+import { LoadCss } from "./theme/loadCustomCss.ts"
+import { ThemePresetSettings } from "./plugins/themePresetSettingsTab.ts"
 
 // Import plugins
-import { CustomStatus } from "./src/plugins/customStatus.ts"
-import { AutoAccept } from "./src/plugins/autoAccept.ts"
-import { CustomBeRp } from "./src/plugins/customBeRp.ts"
-import { DodgeButton } from "./src/plugins/dodgeButton.ts"
-import { LootHelper } from "./src/plugins/lootHelper.ts"
-import { NameSpoofer } from "./src/plugins/nameSpoofer.ts"
-import { OfflineMode } from "./src/plugins/offlineMode.ts"
-import { Practice5vs5 } from "./src/plugins/practice5vs5.ts"
-import { InviteAllFriends } from "./src/plugins/inviteAllFriends.ts"
+import { CustomStatus } from "./plugins/customStatus.ts"
+import { AutoAccept } from "./plugins/autoAccept.ts"
+import { CustomBeRp } from "./plugins/customBeRp.ts"
+import { DodgeButton } from "./plugins/dodgeButton.ts"
+import { LootHelper } from "./plugins/lootHelper.ts"
+import { NameSpoofer } from "./plugins/nameSpoofer.ts"
+import { OfflineMode } from "./plugins/offlineMode.ts"
+import { Practice5vs5 } from "./plugins/practice5vs5.ts"
+import { InviteAllFriends } from "./plugins/inviteAllFriends.ts"
 
 // Import other plugins
 import * as upl from "pengu-upl"
-import { ForceJungLane } from "./src/plugins/forceJungleLane.ts"
-import "./src/plugins/syncUserIcons.ts";
-import "./src/utils/debug.ts"
+import { ForceJungLane } from "./plugins/forceJungleLane.ts"
+import "./plugins/syncUserIcons.ts";
+import "./utils/debug.ts"
 
 class ElainaTheme {
     async main() {
