@@ -113,7 +113,7 @@ export default {
 
 	// Полностью отключить аудиосистему темы
 	// Используется в: src/src/theme/customUI/customHomepage.ts (строки 405, 984)
-	"Disable-Theme-Audio"			: false,
+	"Disable-Theme-Audio"			: true,
 
 	// Зарезервировано для предотвращения ручного обновления
 	// В данный момент не используется
